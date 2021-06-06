@@ -1,0 +1,28 @@
+.filter {
+    background-color: white;
+    height: 90vh;
+    width: 22%;
+    margin: 8px;
+    margin-top:58px;
+}
+
+.filter h2 {
+    margin-top: 5px;
+    padding-left:12px
+}
+
+.price-filter {
+    padding: 12px;
+    border-top: solid 2px gray;
+    border-bottom: solid 2px gray;
+}
+
+.sort {
+    margin-top: 58px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sort div {
+    margin-left: 10px;
+}
