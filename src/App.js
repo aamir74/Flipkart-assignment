@@ -8,6 +8,7 @@ import './components/Filter.css'
 
 const App = () => {
     const originalProduct = productData
+    const [selectedBrand, setSelectedBrand] = useState([])
     const [productItems, setProductItems] = useState(productData)
     console.log(originalProduct)
     const ascPriceHandler = (e) => {
@@ -43,7 +44,16 @@ const App = () => {
 
 
     const brandHandler = (e) => {
-      
+        console.log(productItems)
+        console.log(e.target.value)
+        setSelectedBrand([...selectedBrand, e.target.value])
+        if (e.target.checked) {
+            setProductItems([...productData].filter((p) => p.brand.includes(e.target.value)))
+        }
+        else {
+            setProductItems(originalProduct)
+        }
+
     }
     return (
         <>
@@ -59,9 +69,9 @@ const App = () => {
                     </div>
                     <div className="price-filter">
                         <p>Brand</p>
-                        <p><input type="checkbox" onClick={brandHandler} />Levis</p>
-                        <p><input type="checkbox" onClick={brandHandler} />Flying Machine</p>
-                        <p><input type="checkbox" onClick={brandHandler} />Denim</p>
+                        <p><input value="Levis" type="checkbox" onClick={brandHandler} />Levis</p>
+                        <p><input value="Flying Machine" type="checkbox" onClick={brandHandler} />Flying Machine</p>
+                        <p><input value="Denim" type="checkbox" onClick={brandHandler} />Denim</p>
 
                     </div>
                 </div>
