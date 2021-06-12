@@ -1,0 +1,15 @@
+.counter {
+    display: flex;
+    flex-direction: row;
+    border: solid 2px blue;
+    width: fit-content;
+}
+.counter button {
+    width:20px;
+    color: blue;
+    background-color: white;
+}
+
+.counter h1{
+    margin:5px
+}

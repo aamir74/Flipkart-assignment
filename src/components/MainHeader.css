@@ -1,5 +1,5 @@
 .header{
-    position: absolute;
+    position: fixed;
     top:0%;
     width:100%;
     background-color: #2774F0;
@@ -9,4 +9,8 @@
     text-align: center;
     justify-content: center;
     
+}
+
+.header p {
+    margin-left: 100px;
 }

@@ -1,0 +1,14 @@
+.profile {
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    border: solid 2px black;
+}
+.description {
+    color:white;
+    display:flex;
+    flex-direction: column;
+}
+.description h2 {
+    color:blue
+}

@@ -1,0 +1,65 @@
+.cart-content {
+    margin-top:58px;
+    display: flex;
+    flex-direction: row;
+}
+.cart {
+    margin: 10px;
+    background-color: white;
+    width:65%;
+    height: fit-content;
+}
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    border-top: solid 1px grey;
+    border-bottom: solid 1px grey;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    margin: 0;
+    height:30vh;
+    width:15%;
+}
+
+.cart-price {
+    padding-left: 10px;
+    margin-top: 0px;
+    width:30%;
+    background-color: white;
+    height: fit-content;
+}
+
+.pricing{
+    display: flex;
+    flex-direction: row;
+}
+
+.pricing p{
+    margin-left: 110px;
+    margin-top: 22px;
+}
+.total-amount {
+    border-top: solid 1px grey;
+}
+
+.quantity {
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    margin:50px;
+}
+
+.quantity button {
+    height: 50px;
+    width: 50px;
+    margin:10px;
+    margin-top: 20px;
+    border-radius:40%;
+    background-color: whitesmoke;
+}
+
+.remove-item {
+    margin:20px;
+}
